@@ -157,3 +157,7 @@ footer {
 #contact a:hover {
   text-decoration: underline;
 }
+
+html {
+  scroll-behavior: smooth;
+}
