@@ -109,3 +109,26 @@ footer {
 #latest-insights a:hover {
   text-decoration: underline;
 }
+
+/* Insights page nav fix */
+.insights-nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.insights-nav a {
+  background-color: #ffffff;
+  color: #1b263b;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #c0d6df;
+}
+
+.insights-nav a:hover {
+  background-color: #c0d6df;
+  color: #0d1b2a;
+}
