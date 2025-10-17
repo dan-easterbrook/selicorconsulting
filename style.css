@@ -132,3 +132,28 @@ footer {
   background-color: #c0d6df;
   color: #0d1b2a;
 }
+
+#contact {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #1b263b;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #1b263b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
