@@ -228,3 +228,21 @@ header h1 {
   margin: 0 auto 12px;
 }
 
+/* Banner title */
+.brand-title {
+  font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+@media (max-width: 600px) {
+  .brand-title {
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+  }
+}
+
