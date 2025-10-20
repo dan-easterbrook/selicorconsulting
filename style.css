@@ -273,3 +273,22 @@ header h1 {
     font-size: 1rem;
   }
 }
+
+/* Fade-in animation for banner text */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.brand-title, .tagline {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.brand-title {
+  animation-delay: 0.3s;
+}
+
+.tagline {
+  animation-delay: 0.8s;
+}
