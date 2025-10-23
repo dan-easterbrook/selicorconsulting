@@ -59,6 +59,18 @@
   font-weight: 600;
   margin-top: 20px;
 }
+.ai-next{
+  background:#f3f6f9;
+  border:1px solid #e0e6ee;
+  border-radius:8px;
+  padding:14px 16px;
+  margin-top:14px;
+  color:#1b263b;
+  text-align:center;
+  font-weight:600;
+}
+.ai-next a{ color:#1b263b; text-decoration:none; font-weight:700; }
+.ai-next a:hover{ text-decoration:underline; }
 
   </style>
 </head>
@@ -93,10 +105,14 @@
 
 <section class="ai-form" style="margin-top:30px;">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1NJfCjJ3v8TGl8vntTNX6-TyfWZtrBUN4u8ZKKn-ykkLu_Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-<div id="thankyou">
-  ✅ Thank you! Your enquiry has been received.  
-  I’ll personally reply within one working day.
+<div class="ai-next">
+  ✅ Thanks—when you submit the form above you’ll see a confirmation message here.
+  I’ll reply personally within one working day. Prefer to talk now?
+  <a href="mailto:dan@selicorconsulting.com">Email Dan</a>
+  or
+  <a href="https://calendly.com/your-link-here/15min" target="_blank" rel="noopener">book a 15-min call</a>.
 </div>
+
 </section>
     
 
@@ -105,12 +121,6 @@
   <footer style="text-align:center;margin:30px 0;">
     <a href="../index.html" style="background:#1b263b;color:#fff;text-decoration:none;font-weight:600;padding:8px 14px;border-radius:6px;display:inline-block;">← Back to Home</a>
   </footer>
-<script>
-  window.addEventListener("message", function(event) {
-    if (event.data && event.data.includes("Thank you")) {
-      document.getElementById("thankyou").style.display = "block";
-    }
-  });
-</script>
+
 </body>
 </html>
