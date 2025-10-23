@@ -333,4 +333,11 @@ header h1 {
   color: #0d1b2a;
 }
 
+.footer-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
 
