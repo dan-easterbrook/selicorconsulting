@@ -347,4 +347,14 @@ header h1 {
 /* Tidy default spacing for sections */
 section { padding: 0 20px; }
 
+/* Reusable card */
+.card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 24px auto;
+}
+
 
