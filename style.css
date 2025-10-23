@@ -340,4 +340,11 @@ header h1 {
   margin: 20px 0;
 }
 
+/* Consistent spacing directly below the banner */
+.site-hero + .page-title { margin-top: 24px; }
+.site-hero + section { margin-top: 24px; }
+
+/* Tidy default spacing for sections */
+section { padding: 0 20px; }
+
 
