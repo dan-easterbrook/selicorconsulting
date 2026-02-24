@@ -317,3 +317,7 @@ footer {
 /* Consistent spacing directly below the banner */
 .site-hero + .page-title { margin-top: 24px; }
 .site-hero + section { margin-top: 24px; }
+
+.card h3 { margin-top: 22px; }
+.card ul, .card ol { margin-top: 10px; }
+.card li { margin-bottom: 8px; }
