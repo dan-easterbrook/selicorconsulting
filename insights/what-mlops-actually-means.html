@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>What MLOps Actually Means, and Why Most Teams Hire It Too Late | Selicor Consulting</title>
+  <meta name="description" content="A practical guide to what MLOps is, what it is not, when to hire for it, and how to avoid common mistakes that stop ML work reaching production.">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://www.selicorconsulting.com/insights/what-mlops-actually-means.html" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="What MLOps Actually Means, and Why Most Teams Hire It Too Late">
+  <meta property="og:description" content="What MLOps is, what it is not, when to hire, and how to avoid the common traps that block production impact.">
+  <meta property="og:url" content="https://www.selicorconsulting.com/insights/what-mlops-actually-means.html">
+  <meta property="og:site_name" content="Selicor Consulting">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What MLOps Actually Means, and Why Most Teams Hire It Too Late",
+    "author": {
+      "@type": "Organization",
+      "name": "Selicor Consulting"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Selicor Consulting",
+      "url": "https://www.selicorconsulting.com/"
+    },
+    "mainEntityOfPage": "https://www.selicorconsulting.com/insights/what-mlops-actually-means.html"
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF6YR6SHCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VF6YR6SHCM');
+  </script>
+</head>
+
+<body>
+  <a id="top"></a>
+
+  <header class="site-hero">
+    <nav class="topnav">
+      <a href="/">Home</a>
+      <a href="/insights/">Insights</a>
+      <a href="/ai-training/">AI Training</a>
+    </nav>
+
+    <h1 class="brand-title">SELICOR CONSULTING</h1>
+    <p class="tagline">Data and AI Recruitment Specialists</p>
+  </header>
+
+  <section class="card">
+    <h2>What MLOps actually means, and why most teams hire it too late</h2>
+
+    <p><strong>MLOps exists because models do not fail in notebooks. They fail in the real world.</strong></p>
+
+    <p>
+      Many organisations can build a model.
+      Fewer can deploy one reliably.
+      Even fewer can monitor it, retrain it, and govern it over time.
+      That gap is what MLOps is for.
+    </p>
+
+    <p>
+      The hiring mistake I see most often is this.
+      Teams hire data scientists first, generate prototypes, then realise they have no pathway to production.
+      At that point, MLOps is hired under pressure, with unclear ownership and unrealistic expectations.
+    </p>
+
+    <h3>A practical definition</h3>
+    <p>
+      MLOps is the set of practices and platform capabilities that make machine learning systems deployable, observable, and controllable.
+      It bridges experimentation and production.
+      It is part engineering, part platform, and part governance.
+    </p>
+
+    <h3>What MLOps is not</h3>
+    <ul>
+      <li><strong>Not just deployment</strong>. Shipping a model once is the easy part. Running it safely over time is the work.</li>
+      <li><strong>Not a tool purchase</strong>. Tooling helps, but ownership and operating model matter more.</li>
+      <li><strong>Not a data scientist side project</strong>. It needs dedicated engineering attention and standards.</li>
+      <li><strong>Not a single hire</strong> if the organisation is scaling multiple models across products.</li>
+    </ul>
+
+    <h3>Why models fail after deployment</h3>
+    <p>
+      Production failure rarely looks like a crash.
+      It looks like slow degradation.
+      A model that quietly stops performing, or a pipeline that drifts, or behaviour that changes as the world changes.
+    </p>
+
+    <ul>
+      <li>Training and serving data do not match</li>
+      <li>Data quality shifts, and no one notices</li>
+      <li>Concept drift changes underlying patterns</li>
+      <li>Latency and cost are higher than expected</li>
+      <li>Governance requirements block release</li>
+      <li>No one owns monitoring, retraining, or rollback decisions</li>
+    </ul>
+
+    <h3>Signs you need MLOps now</h3>
+    <ul>
+      <li>You have models in production or you are planning to ship one in the next 3 to 6 months</li>
+      <li>Data scientists are spending time on packaging, CI/CD, and infrastructure</li>
+      <li>You cannot explain how a model is monitored, audited, or retrained</li>
+      <li>Your release process involves manual steps and informal approvals</li>
+      <li>Security and compliance are slowing delivery because standards are unclear</li>
+    </ul>
+
+    <h3>When you should not hire MLOps yet</h3>
+    <p>
+      This might sound counterintuitive, but not every organisation needs MLOps immediately.
+      If you are still proving a use case, do not overbuild.
+      The key is having a credible path to deployment, even if it is simple.
+    </p>
+
+    <ul>
+      <li>You have no clear use case that is going to production</li>
+      <li>Your data foundations are not stable enough to support reliable pipelines</li>
+      <li>There is no engineering ownership for production systems</li>
+      <li>No one can define what success and risk look like for the first model</li>
+    </ul>
+
+    <h3>The common MLOps hire archetypes</h3>
+    <p>
+      MLOps titles vary. Clarifying which archetype you need avoids most mis-hires.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Platform MLOps</strong><br>
+        Builds shared infrastructure, standards, and tooling for multiple teams and models.
+      </li>
+      <li>
+        <strong>Product embedded MLOps</strong><br>
+        Works with one product team to ship, monitor, and operate a model end to end.
+      </li>
+      <li>
+        <strong>ML reliability and monitoring</strong><br>
+        Focuses on observability, drift detection, alerts, performance metrics, and safe rollback.
+      </li>
+    </ul>
+
+    <h3>What to clarify before you hire</h3>
+    <ol>
+      <li><strong>Ownership</strong>: who signs off deployments and who owns incidents.</li>
+      <li><strong>Scope</strong>: one model, one product, or a shared platform.</li>
+      <li><strong>Tooling reality</strong>: what exists today, what is mandated, and what can change.</li>
+      <li><strong>Governance stance</strong>: privacy, security, audit, and what is non negotiable.</li>
+      <li><strong>Success metrics</strong>: reliability, time to deploy, model performance stability, and incident reduction.</li>
+    </ol>
+
+    <h3>If you want to go deeper</h3>
+    <p>
+      I also have a dedicated guide on <a href="/mlops-recruitment.html">MLOps recruitment</a>.
+      If you are unsure whether you need MLOps now, we can pressure test the deployment pathway and ownership model quickly before you go to market.
+    </p>
+
+    <p style="margin-top: 18px;">
+      <a href="/insights/" class="btn btn-light">Back to Insights</a>
+      <a href="/#contact" class="btn btn-primary" style="margin-left: 8px;">Talk through a role</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Selicor Consulting | Data &amp; AI Recruitment</p>
+    <div class="footer-btns">
+      <a href="#top" class="btn btn-primary">Back to top</a>
+    </div>
+  </footer>
+
+</body>
+</html>
