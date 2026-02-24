@@ -321,3 +321,6 @@ footer {
 .card h3 { margin-top: 22px; }
 .card ul, .card ol { margin-top: 10px; }
 .card li { margin-bottom: 8px; }
+
+#specialisms ul { margin-top: 12px; }
+#specialisms li { margin-bottom: 8px; }
