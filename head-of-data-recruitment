@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Head of Data Recruitment UK | Selicor Consulting</title>
+  <meta name="description" content="Specialist Head of Data recruitment in the UK. Helping organisations define data leadership roles, ownership, governance and hiring structure before search.">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://www.selicorconsulting.com/head-of-data-recruitment.html" />
+</head>
+
+<body>
+<a id="top"></a>
+
+<header class="site-hero">
+  <nav class="topnav">
+    <a href="/">Home</a>
+    <a href="/insights/">Insights</a>
+    <a href="/ai-training/">AI Training</a>
+  </nav>
+  <h1 class="brand-title">Head of Data Recruitment</h1>
+  <p class="tagline">UK specialist search for data leadership roles</p>
+</header>
+
+<section class="card">
+<h2>Hiring a Head of Data</h2>
+
+<p><strong>The success of your data strategy depends on clarity of ownership.</strong></p>
+
+<p>
+A Head of Data role is often created when an organisation recognises that data has become critical to performance, risk, or growth. The challenge is that many companies hire the title before defining the mandate.
+</p>
+
+<h3>Common hiring mistakes</h3>
+<ul>
+<li>Unclear reporting lines between technology and commercial leadership</li>
+<li>No defined governance framework</li>
+<li>Expecting one leader to fix engineering, analytics and AI simultaneously</li>
+<li>Hiring transformation rhetoric instead of operational delivery</li>
+</ul>
+
+<h3>What strong Heads of Data expect</h3>
+<ul>
+<li>Clear executive sponsorship</li>
+<li>Defined scope and authority</li>
+<li>Realistic resource allocation</li>
+<li>Measurable outcomes within 12 months</li>
+</ul>
+
+<h3>How we approach the search</h3>
+<p>
+Before going to market, we pressure test role purpose, reporting structure and capability sequence. Once aligned, we run a retained and targeted search through Scot Lewis Associates, presenting shortlists grounded in evidence, not volume.
+</p>
+
+<h3>Related roles</h3>
+<ul>
+<li><a href="/data-engineering-recruitment.html">Data Engineering recruitment</a></li>
+<li><a href="/mlops-recruitment.html">MLOps recruitment</a></li>
+<li><a href="/ai-product-lead-recruitment.html">AI Product and AI Lead recruitment</a></li>
+</ul>
+
+<p style="margin-top:20px;">
+<a href="/#contact" class="btn btn-primary">Discuss a Head of Data hire</a>
+</p>
+
+</section>
+
+<footer>
+<p>© 2025 Selicor Consulting | Data & AI Recruitment</p>
+<div class="footer-btns">
+<a href="#top" class="btn btn-primary">Back to top</a>
+</div>
+</footer>
+
+</body>
+</html>
