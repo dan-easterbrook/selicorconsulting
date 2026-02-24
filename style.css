@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /* Reset and base styles */
 body {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -7,6 +8,10 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Universal banner */
@@ -35,32 +40,7 @@ body {
   z-index: 2;
 }
 
-
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-section h2 {
-  color: #1b263b;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 5px;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-footer {
-  text-align: center;
-  background-color: #1b263b;
-  color: white;
-  padding: 15px 10px;
-  font-size: 0.9em;
-}
-
+/* Top nav */
 .topnav {
   display: flex;
   gap: 16px;
@@ -78,6 +58,133 @@ footer {
   text-decoration: underline;
 }
 
+/* Banner title – full width and white text */
+.brand-title {
+  font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1.2px;
+  color: #ffffff !important;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto 10px auto;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .brand-title {
+    font-size: 2rem;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* Banner tagline */
+.tagline {
+  font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #c0d6df;
+  text-align: center;
+  margin: 10px auto 0 auto;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+/* Fade-in animation for banner text */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.brand-title, .tagline {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.brand-title { animation-delay: 0.3s; }
+.tagline { animation-delay: 0.8s; }
+
+/* New hero additions */
+.hero-copy {
+  max-width: 860px;
+  margin: 14px auto 0;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.92);
+}
+
+.hero-cta {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  color: #1b263b;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Reusable card */
+.card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 24px auto;
+}
+
+/* About block (kept, but now valid) */
+#about {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+
+#about h2 {
+  color: #1b263b;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+#about h3 {
+  color: #1b263b;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+#about p { margin-bottom: 14px; }
+#about ul { margin-left: 20px; margin-bottom: 14px; }
+#about li { margin-bottom: 8px; }
+
+#about strong { color: #0d1b2a; }
+
+/* Latest insights card tweaks (optional, keeps your existing look) */
 #latest-insights {
   background: #ffffff;
   border: 1px solid #e8e8e8;
@@ -129,6 +236,7 @@ footer {
   color: #0d1b2a;
 }
 
+/* Contact */
 #contact {
   background: #ffffff;
   border: 1px solid #e8e8e8;
@@ -154,152 +262,9 @@ footer {
   text-decoration: underline;
 }
 
-html {
-
-  #about {
-  background: #ffffff;
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
-  padding: 30px;
-  max-width: 900px;
-  margin: 40px auto;
-  line-height: 1.6;
-}
-
-#about h2 {
-  color: #1b263b;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-#about h3 {
-  color: #1b263b;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  font-size: 1.2em;
-}
-
-#about p {
-  margin-bottom: 14px;
-}
-
-#about ul {
-  margin-left: 20px;
-  margin-bottom: 14px;
-}
-
-#about li {
-  margin-bottom: 8px;
-}
-
-#about strong {
-  color: #0d1b2a;
-}
-
-  scroll-behavior: smooth;
-}
-
-/* Style the H1 logo */
-header h1 {
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-align: center;
-  color: #1b263b;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-}
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.9rem;
-  }
-}
-
-.logo {
-  width: 380px;         /* good desktop size */
-  max-width: 80%;       /* scale down on mobile */
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-/* Banner title – full width and white text */
-.brand-title {
-  font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 1.2px;
-  color: #ffffff !important;
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin: 0 auto 10px auto;
-  text-transform: uppercase;
-}
-
-@media (max-width: 600px) {
-  .brand-title {
-    font-size: 2rem;
-    letter-spacing: 0.8px;
-  }
-}
-
-
-/* Banner tagline */
-.tagline {
-  font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #c0d6df;
-  text-align: center;
-  margin: 10px auto 0 auto;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 600px) {
-  .tagline {
-    font-size: 1rem;
-  }
-}
-
-/* Fade-in animation for banner text */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.brand-title, .tagline {
-  opacity: 0;
-  animation: fadeIn 1.2s ease-out forwards;
-}
-
-.brand-title {
-  animation-delay: 0.3s;
-}
-
-.tagline {
-  animation-delay: 0.8s;
-}
-
-.page-title {
-  max-width: 900px;
-  margin: 24px auto 10px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.page-title h1 {
-  margin: 0 0 6px 0;
-  color: #1b263b;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.page-title p {
-  margin: 0;
-  color: #445;
-  font-size: 1rem;
+.contact-note {
+  margin-top: 18px;
+  opacity: 0.9;
 }
 
 /* Buttons (shared) */
@@ -340,30 +305,15 @@ header h1 {
   margin: 20px 0;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #1b263b;
+  color: white;
+  padding: 15px 10px;
+  font-size: 0.9em;
+}
+
 /* Consistent spacing directly below the banner */
 .site-hero + .page-title { margin-top: 24px; }
 .site-hero + section { margin-top: 24px; }
-
-/* Tidy default spacing for sections */
-section { padding: 0 20px; }
-
-/* Reusable card */
-.card {
-  background: #ffffff;
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 900px;
-  margin: 24px auto;
-}
-
-.card {
-  background: #ffffff;
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 900px;
-  margin: 24px auto;
-}
-
-
