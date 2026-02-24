@@ -4,26 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insights | Selicor Consulting</title>
+  <meta name="description" content="Insights and practical guidance on hiring for Data, Engineering, MLOps and AI Product leadership.">
   <link rel="stylesheet" href="../style.css">
+
   <style>
-  .insights-list { max-width: 800px; margin: 20px auto; padding: 0; list-style: none; }
-  .insights-list li { margin: 0 0 10px 0; }
-  .insights-list a {
-    display: block; background: #ffffff; border: 1px solid #e8e8e8;
-    border-radius: 8px; padding: 12px 14px; text-decoration: none;
-    color: #1b263b; font-weight: 600;
-  }
-  .insights-list a:hover { background: #f3f6f9; border-color: #c0d6df; }
-</style>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF6YR6SHCM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VF6YR6SHCM');
-</script>
+    .insights-list { max-width: 800px; margin: 20px auto; padding: 0; list-style: none; }
+    .insights-list li { margin: 0 0 10px 0; }
+    .insights-list a {
+      display: block; background: #ffffff; border: 1px solid #e8e8e8;
+      border-radius: 8px; padding: 12px 14px; text-decoration: none;
+      color: #1b263b; font-weight: 600;
+    }
+    .insights-list a:hover { background: #f3f6f9; border-color: #c0d6df; }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    @media (max-width: 720px) {
+      .featured-grid { grid-template-columns: 1fr; }
+    }
+
+    .featured-card {
+      display: block;
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 14px 14px;
+      text-decoration: none;
+      color: #1b263b;
+    }
+    .featured-card:hover {
+      background: #f3f6f9;
+      border-color: #c0d6df;
+    }
+    .featured-card strong { display: block; margin-bottom: 6px; }
+    .featured-card span { display: block; font-weight: 400; color: #445; line-height: 1.4; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF6YR6SHCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VF6YR6SHCM');
+  </script>
 </head>
+
 <body>
 <header class="site-hero">
   <nav class="topnav">
@@ -37,27 +67,62 @@
 
 <section class="page-title">
   <h1>Insights</h1>
-  <p>Articles and ideas on data &amp; AI recruitment.</p>
+  <p>Articles and practical guidance on hiring across data, engineering and AI roles.</p>
 </section>
 
+<section class="card" id="featured-guides">
+  <h2>Featured guides</h2>
+  <p>Commercial hiring guides, built around role clarity, ownership, and what good looks like in 12 months.</p>
 
-  <section class="card">
-    <ul class="insights-list">
-  <li><a href="why-ai-recruitment-is-different.html">Why AI Recruitment Is Different</a></li>
-  <li><a href="how-to-hire-a-data-scientist.html">How to Hire a Data Scientist</a></li>
-</ul>
+  <div class="featured-grid">
+    <a class="featured-card" href="/head-of-data-recruitment.html">
+      <strong>Head of Data recruitment</strong>
+      <span>Define mandate, reporting line, governance ownership, and the right first 90 days.</span>
+    </a>
+
+    <a class="featured-card" href="/data-engineering-recruitment.html">
+      <strong>Data Engineering recruitment</strong>
+      <span>Build and scale reliable data platforms. Clarify scope between platform, analytics engineering, and DevOps.</span>
+    </a>
+
+    <a class="featured-card" href="/mlops-recruitment.html">
+      <strong>MLOps recruitment</strong>
+      <span>Ship and monitor models safely. Bridge ML work to production systems with clear ownership.</span>
+    </a>
+
+    <a class="featured-card" href="/ai-product-lead-recruitment.html">
+      <strong>AI Product and AI Lead recruitment</strong>
+      <span>Translate capability into outcomes. Make sure AI has a real product owner and success metrics.</span>
+    </a>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Latest insights</h2>
+  <ul class="insights-list">
+    <li><a href="why-ai-recruitment-is-different.html">Why AI Recruitment Is Different</a></li>
+    <li><a href="how-to-hire-a-data-scientist.html">How to Hire a Data Scientist</a></li>
+
+    <!-- Add these four as we create them -->
+    <li><a href="when-to-hire-a-head-of-data.html">When you should hire a Head of Data, and when you shouldn&rsquo;t</a></li>
+    <li><a href="data-engineering-vs-analytics-engineering.html">Data Engineering vs Analytics Engineering, and why it matters</a></li>
+    <li><a href="what-mlops-actually-means.html">What MLOps actually means, and why most teams hire it too late</a></li>
+    <li><a href="ai-product-lead-vs-head-of-ai.html">AI Product Lead vs Head of AI, choosing the right leadership role</a></li>
+  </ul>
 </section>
 
 <footer>
-<p class="footer-btns">
-  <a href="../index.html" class="btn btn-primary">← Back to Home</a>
-</p>
+  <p class="footer-btns">
+    <a href="/" class="btn btn-primary">← Back to Home</a>
+    <a href="#top" class="btn btn-light">Back to top</a>
+  </p>
 </footer>
-<section id="contact">
+
+<section id="contact" class="card">
   <h2>Contact</h2>
-  <p>If you’d like to discuss a data or AI hiring challenge, please get in touch.</p>
+  <p>If you&rsquo;d like to discuss a data or AI hiring challenge, please get in touch.</p>
   <p>Email: <a href="mailto:dan@selicorconsulting.com">dan@selicorconsulting.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/daneasterbrook/" target="_blank">linkedin.com/in/daneasterbrook</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/daneasterbrook/" target="_blank" rel="noopener noreferrer">linkedin.com/in/daneasterbrook</a></p>
 </section>
 
 </body>
